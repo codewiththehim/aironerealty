@@ -1,5 +1,5 @@
 
 module.exports = {
-    databaseURL: "mongodb://127.0.0.1:27017",
+    databaseURL: "mongodb+srv://hj:<hj@200120>@airone.qcnydgr.mongodb.net/?retryWrites=true&w=majority&appName=airone",
     port: process.env.PORT || 5000,
 }
