@@ -1443,3 +1443,16 @@
 1710474103667: ::1 - OPTIONS - /userInfo 
 1710474103673: ::1 - GET - /userInfo 
 1710474103681: ::1 - GET - /userInfo 
+1716396543548: ::1 - OPTIONS - /userInfo 
+1716396543555: ::1 - OPTIONS - /userInfo 
+1716396543562: ::1 - GET - /userInfo 
+1716396543587: ::1 - GET - /userInfo 
+1716399952183: ::1 - OPTIONS - /userInfo 
+1716399952187: ::1 - OPTIONS - /userInfo 
+1716399952211: ::1 - GET - /userInfo 
+1716399952234: ::1 - GET - /userInfo 
+1716399959035: ::1 - OPTIONS - /userInfo 
+1716399959039: ::1 - GET - /userInfo 
+1716399959043: ::1 - GET - /userInfo 
+1716400021864: ::1 - OPTIONS - /signup 
+1716400021955: ::1 - POST - /signup 

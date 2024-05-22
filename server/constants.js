@@ -1,6 +1,6 @@
 
 module.exports = {
-    databaseURL: "mongodb+srv://Airone2024:Airone2024@airone.qcnydgr.mongodb.net/?retryWrites=true&w=majority&appName=airone",
+    databaseURL: "mongodb+srv://codewiththehimanshu:o09928446853@airone.uvoycvd.mongodb.net/?retryWrites=true&w=majority&appName=Airone",
     port:  10000,
 }
 
