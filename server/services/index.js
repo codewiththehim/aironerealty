@@ -1,4 +1,4 @@
-const jwt = require('jsonwebtoken');
+const jwt = require("jsonwebtoken");
 
 const key = "India";
 const singInToken = (email) => {
@@ -10,22 +10,13 @@ const singInToken = (email) => {
 };
 
 const verifyToken = (token) => {
-
-  
-
-
   return jwt.verify(token, key, async (err, data) => {
     if (err) {
-     return -1;
+      return -1;
     } else {
       return data;
     }
-  })
+  });
+};
 
-
-
-   
-}
-
-
-module.exports = {singInToken, verifyToken}
+module.exports = { singInToken, verifyToken };

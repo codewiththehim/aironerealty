@@ -1456,3 +1456,4 @@
 1716399959043: ::1 - GET - /userInfo 
 1716400021864: ::1 - OPTIONS - /signup 
 1716400021955: ::1 - POST - /signup 
+1716401010921: ::1 - POST - /login 
