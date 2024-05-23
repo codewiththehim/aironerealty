@@ -47,7 +47,7 @@ async function handleUserLogin(req, res) {
     userName: userData?.userName,
     email: userData?.email,
   };
-  console.log("0000000000000000", userData);
+ 
   try {
     if (await bcrypt.compare(password, userData?.password)) {
       console.log("222222222222", userData);
@@ -59,6 +59,7 @@ async function handleUserLogin(req, res) {
     }
   } catch (err) {
     console.log("error$$$", err);
+    res.status(400).send("We are facing some issue, please try later");
   }
 }
 
@@ -101,8 +102,10 @@ async function handleForgotPassword(req, res) {
   }
   try {
     mail(email, "userData.password");
+    res.status(201).send("We have sent an email to recover the password");
   } catch (err) {
     console.log("error$$$", err);
+    res.status(404).send("We are facing some issue, please try later");
   }
 }
 module.exports = {
