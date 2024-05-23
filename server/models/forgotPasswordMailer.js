@@ -22,7 +22,7 @@ let transport = nodeMailer.createTransport({
           } else {
             var mailOptions = {
               from: 'hj.jain05vit@gmail.com',
-              to: "hj.jain05vit@gmail.com",
+              to: email,
               subject: "Please find your credentials",
               html: data
             };
