@@ -102,7 +102,7 @@ async function handleForgotPassword(req, res) {
   }
   try {
     mail(email, "userData.password");
-    res.status(201).send("We have sent an email to recover the password");
+    res.status(201).send({message:"We have sent an email to recover the password"});
   } catch (err) {
     console.log("error$$$", err);
     res.status(404).send("We are facing some issue, please try later");
