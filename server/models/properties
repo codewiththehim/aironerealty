@@ -1,0 +1,66 @@
+const mongoose = require("mongoose");
+
+const userSchema = new mongoose.Schema(
+  {
+    name: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+    city: {
+      type: String,
+      required: true,
+    },
+    area: {
+      type: String,
+      required: true,
+    },
+    state: {
+      type: String,
+      required: true,
+    },
+    purpose: {
+      type: String,
+      required: true,
+    },
+    size: {
+      type: Number,
+    },
+    garages: {
+      type: Number,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+    washrooms: {
+      type: Number,
+    },
+    year: {
+      type: Number,
+    },
+    type: {
+      type: String,
+      required: true,
+    },
+    bedrooms: {
+      type: Number,
+    },
+    amountPurpose: {
+      type: String,
+      required: true,
+    },
+    amount: {
+      type: Number,
+      required: true,
+    },
+    amenities: {
+      type: String,
+    },
+  },
+  { timestamps: true }
+);
+
+const Credentials = mongoose.model("properties", userSchema);
+
+module.exports = Credentials;

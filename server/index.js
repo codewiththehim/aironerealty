@@ -1,9 +1,10 @@
 const express = require("express");
 const urlencoded = require("./middlewares/urlencode");
-const userRouter = require("./routes/userRouter");
+// const userRouter = require("./routes/userRouter");
 const contactRouter = require("./routes/contactRouter");
-const pageRouter = require("./routes/pageRouter");
-const authentication = require("./routes/authentication");
+// const pageRouter = require("./routes/pageRouter");
+// const authentication = require("./routes/authentication");
+const properties = require("./routes/properties");
 const {addLogs} = require("./middlewares/logs")
 var bodyParser = require('body-parser')
 const constants = require("./constants");
@@ -30,10 +31,11 @@ connectMongoDb("firstCollection")
 
 
 // routes
-app.use(authentication);
-app.use("/page", pageRouter);
-app.use("/user", userRouter);
+// app.use(authentication);
+// app.use("/page", pageRouter);
+// app.use("/user", userRouter);
 app.use(contactRouter)
+// app.use(properties)
 
 // start and listen the server
 app.listen(constants.port, () => {
